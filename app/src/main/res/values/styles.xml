@@ -28,7 +28,7 @@
 
     <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- 状态栏和标题栏颜色,紫色,棕色-->
-        <item name="colorPrimary">#7da9b0</item>
+        <item name="colorPrimary">#77bcc6</item>
         <item name="colorPrimaryDark">#461111</item>
         <!-- 标题颜色-->
         <item name="android:textColorPrimary">#461111</item>
@@ -73,5 +73,14 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="progress_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item> <!--Dialog的windowFrame框为无 -->
+        <item name="android:windowIsFloating">false</item><!-- 是否漂现在activity上 -->
+        <item name="android:windowIsTranslucent">true</item><!-- 是否半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 	      <item name="android:windowBackground">@drawable/loading_bg</item> -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
 
 </resources>

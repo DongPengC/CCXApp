@@ -109,6 +109,7 @@ public class MainActivity extends AppCompatActivity implements
     private TextView myName;
     private TextView userName;
     private TextView loginout;
+    private TextView jiazai;
     private CircleImageView leftUserAvatarCIV;
     private DrawerLayout drawerLayout;
     private ImageView myAvatarCIV;
@@ -218,6 +219,7 @@ public class MainActivity extends AppCompatActivity implements
         toFriend = (TextView) v1.findViewById(R.id.tvMyFriend);
         myName = (TextView) v1.findViewById(R.id.myName);
         loginout = (TextView) v1.findViewById(R.id.loginout);
+        jiazai = (TextView) v1.findViewById(R.id.quan) ;
         leftUserAvatarCIV = (CircleImageView) v1.findViewById(R.id.left_my_avatar_civ);
         try {
             myName.setText(JMessageClient.getMyInfo().getNickname());
@@ -254,6 +256,12 @@ public class MainActivity extends AppCompatActivity implements
                                 loginOut();
                             }
                         }).show();
+            }
+        });
+        jiazai.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new ProgersssDialog(MainActivity.this);
             }
         });
     }
