@@ -58,7 +58,7 @@ public class ChatAdapter extends BaseAdapter {
     		/*得到各个控件的对象*/
     		holder.chatroom_name = (TextView) convertView.findViewById(R.id.chatroom_name);
     		convertView.setTag(holder);//绑定ViewHolder对象
-    	}
+	}
 		holder = (ViewHolder)convertView.getTag();
 		String groupName = groupInfos.get(position).getGroupName();
 		holder.chatroom_name.setText(groupName);

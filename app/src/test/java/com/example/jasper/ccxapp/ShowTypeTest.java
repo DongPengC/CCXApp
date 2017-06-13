@@ -9,6 +9,7 @@ import static org.junit.Assert.assertEquals;
 public class ShowTypeTest implements ShowType {
 
     public void valueTest() throws Exception{
+        String  SHOW = "show";
         assertEquals(SHOW,"show");
         assertEquals(SHOW,"SHOW");
         assertEquals(COMMENT,"comment");
